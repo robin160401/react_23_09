@@ -4,12 +4,12 @@ let show = "hidden";
 let show2 = "hidden"
 
 function Faq(){
-    const [hideAnswer, setAnswer] = useState(true);
-    const [hideAnswer2, setAnswer2] = useState(false);
+    const [hideAnswer1, setAnswer] = useState(true);
+    const [showAnswer2, setAnswer2] = useState(false);
 
     function handleClick(){
-        setAnswer(!hideAnswer)
-        if(!hideAnswer){
+        setAnswer(!hideAnswer1)
+        if(!hideAnswer1){
             show = "hidden";
             show2 = "hidden";
         } else {
@@ -19,8 +19,8 @@ function Faq(){
     }
 
     function handleClick2(){
-        setAnswer2(!hideAnswer2);
-        if(hideAnswer2){
+        setAnswer2(!showAnswer2);
+        if(showAnswer2){
             show2 = "";
         } else {
             show2="hidden"
